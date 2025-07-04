@@ -1,0 +1,26 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 5vw;
+    font-size: 1.4rem;
+}
+
+.logo {
+    width: 300px;
+}
+
+.rightSide {
+    display: flex;
+    gap: 2.5vw;
+}
+
+.navItem {
+    display: flex;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.navItem:hover {
+    color: var(--accent);
+}
