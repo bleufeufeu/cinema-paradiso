@@ -128,4 +128,8 @@
   .summary {
     width: 100%;
   }
+
+  .cartItem {
+    flex-wrap: wrap;
+  }
 }
