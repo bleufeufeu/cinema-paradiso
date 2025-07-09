@@ -10,6 +10,8 @@ export default function Home() {
       <Link to="movies" className={styles.button}>
         See What's Playing
       </Link>
+
+      <p>Powered by <a className={styles.link} href="https://www.themoviedb.org/" target="_blank">TMDB</a> and <a className={styles.link} href="https://css-loaders.com/" target="_blank">CSS Loaders</a></p>
     </div>
   );
 }

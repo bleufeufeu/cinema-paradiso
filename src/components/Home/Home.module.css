@@ -25,3 +25,11 @@
 .button:hover {
   background-color: var(--accent-secondary);
 }
+
+.link {
+  transition: all 0.5s;
+}
+
+.link:hover {
+  color: var(--accent);
+}
