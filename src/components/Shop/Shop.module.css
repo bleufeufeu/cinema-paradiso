@@ -1,0 +1,36 @@
+.loadingContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  transition: all 0.5s;
+}
+
+.card div {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.moviesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 50px;
+}
+
+.cardImg {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}

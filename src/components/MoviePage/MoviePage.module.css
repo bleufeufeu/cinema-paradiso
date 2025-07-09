@@ -1,0 +1,211 @@
+.loadingContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.detailsMain {
+  display: flex;
+  flex-direction: row;
+  justify-content: top;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 0;
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-blend-mode: darken;
+  aspect-ratio: 16/9;
+  width: 100%;
+  background-color: rgba(28, 28, 28, 0.75);
+}
+
+.centre {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 5rem 2rem;
+  width: 100%;
+}
+
+.detailsMainContent {
+  display: flex;
+  gap: 3rem;
+}
+
+.detailsMainRight {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  object-fit: cover;
+}
+
+.poster {
+  flex-shrink: 0;
+  align-self: flex-start;
+  width: auto;
+  height: auto;
+  max-width: 250px;
+  border-radius: 10px;
+}
+
+.logo {
+  max-width: 250px;
+  width: 40%;
+  height: auto;
+}
+
+.tagline {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.genreList {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.genre {
+  background-color: var(--grey);
+  padding: 0.5rem;
+  border-radius: 20px;
+}
+
+.dateTime,
+.alignIcon {
+  display: flex;
+  align-items: center;
+}
+
+.dateTime {
+  gap: 20px;
+}
+
+.alignIcon {
+  gap: 5px;
+}
+
+.trailer {
+  background-color: var(--grey);
+  align-self: flex-start;
+  padding: 0.5rem;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+
+.trailer:hover {
+  background-color: var(--grey-secondary);
+}
+
+.cartAdder {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.cartAdder > div {
+  display: flex;
+  align-items: stretch;
+}
+
+.increment {
+  background-color: var(--grey);
+  color: var(--text-primary);
+  border: none;
+  padding: 0.5rem;
+}
+
+.minus {
+  border-radius: 10px 0 0 10px;
+}
+
+.quantityInput {
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+  border: none;
+  padding: 0.5rem;
+  max-width: 2rem;
+  font-family: inherit;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+.plus {
+  border-radius: 0 10px 10px 0;
+}
+
+.addToCart {
+  background-color: var(--accent);
+  color: var(--text-primary);
+  font-family: inherit;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 10px;
+  padding: 0.5rem;
+  transition: all 0.5s;
+}
+
+.addToCart:hover {
+  background-color: var(--accent-secondary);
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.crew {
+  display: flex;
+  gap: 10rem;
+}
+
+.creditItem {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.creditList {
+  display: flex;
+}
+
+.role {
+  color: var(--light-grey);
+}
+
+.castContainer {
+  display: flex;
+  gap: 3rem;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+.castContainer::-webkit-scrollbar {
+  display: none;
+}
+
+.actorCard {
+  flex: 0 0 150px;
+}
+
+.actor {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+  max-width: 150px;
+}
+
+@media (max-width: 768px) {
+  .detailsMainContent {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .logo,
+  .poster {
+    align-self: center;
+  }
+}

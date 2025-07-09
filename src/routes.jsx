@@ -6,32 +6,32 @@ import Cart from "./components/Cart/Cart";
 import ErrorPage from "./ErrorPage";
 
 const routes = [
-    {
-        path: "/",
-        element: <App />,
-        children: [
-            {
-                index: true,
-                element: <Home />,
-                errorElement: <ErrorPage />
-            },
-            {
-                path: "/movies/",
-                element: <Shop />,
-                errorElement: <ErrorPage />
-            },
-            {
-                path: "/movies/:movieId",
-                element: <MoviePage />,
-                errorElement: <ErrorPage />
-            },
-            {
-                path: "/cart",
-                element: <Cart />,
-                errorElement: <ErrorPage />
-            }
-        ]
-    }
+  {
+    path: "/",
+    element: <App />,
+    children: [
+      {
+        index: true,
+        element: <Home />,
+        errorElement: <ErrorPage />,
+      },
+      {
+        path: "/movies/",
+        element: <Shop />,
+        errorElement: <ErrorPage />,
+      },
+      {
+        path: "/movies/:movieId",
+        element: <MoviePage />,
+        errorElement: <ErrorPage />,
+      },
+      {
+        path: "/cart",
+        element: <Cart />,
+        errorElement: <ErrorPage />,
+      },
+    ],
+  },
 ];
 
 export default routes;
