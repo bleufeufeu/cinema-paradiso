@@ -17,6 +17,7 @@ const getMoviesList = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
+    setLoading(true);
     fetch(url, options)
       .then((response) => response.json())
       .then((data) => setNowPlaying(data.results))

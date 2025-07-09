@@ -34,3 +34,19 @@
   object-fit: cover;
   border-radius: 10px;
 }
+
+@media (max-width: 900px) {
+  .shop {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .moviesGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 50px;
+  }
+}
+
