@@ -14,3 +14,4 @@ If you are developing a production application, we recommend using TypeScript wi
 ## Credits
 
 - Loading animation from https://css-loaders.com/
+- TMDB API https://developer.themoviedb.org/docs/getting-started
